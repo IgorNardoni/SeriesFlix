@@ -1,0 +1,119 @@
+@charset "UTF-8";
+
+
+:root {
+    --azul-ciano: rgb(0, 168, 225);
+    --red: rgb(229, 9, 20);
+    --preto: rgb(20, 20, 20);
+    
+   --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+   --fonte-destaque: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/*elementos base*/
+body {
+    background-color: var(--preto);
+    color: white
+}
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 5px;
+    margin-right: 5px;
+
+}
+
+.container > h1 {
+    font-family: var(--fonte-destaque);
+    color: var(--red);
+    font-size: 3.5em;
+    
+}
+
+header nav a {
+    text-decoration: none;
+    font-family: var(--fonte-padrao);
+    color: rgb(170, 170, 170);
+    margin-right: 10px;
+}
+
+header nav a:hover {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+/*serie principal*/
+.serie-principal {
+    font-size: 16px;
+    font-family: var(--fonte-padrao);
+    background: linear-gradient(rgba(0, 0, 0, .50),rgba(0, 0, 0, .50) 100%), url('/img/capa-criminal-minds.jpg');
+
+    height: 650px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+
+}
+
+.serie-principal .titulo {
+    margin-top: 200px;
+    font-family: 'Lucida Sans Unicode', sans-serif;
+}
+
+.serie-principal .descricao {
+    margin-top: 10px;
+    margin-bottom: 60px;
+}
+
+ strong {
+    font-size: 30px;
+} 
+
+span {
+    font-size: 0.8em;
+    color: rgb(170, 170, 170);
+}
+
+.botao {
+    background-color: rgba(0, 0, 0, .50); 
+    border: none; 
+    color: white; 
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+   padding: 15px 30px; 
+   margin-right: 20px;
+   font-size: 12px;
+
+   cursor: pointer;
+   transition: .5s ease all;
+}
+
+.botao:hover {
+    background-color: var(--azul-ciano);
+    font-weight: bold;
+    box-shadow: 2px 2px 2px 2px black;
+}
+
+.botao i {
+    margin-right: 8px;
+}
+
+.box-animes {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
